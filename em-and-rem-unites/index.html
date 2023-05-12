@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Em & Rem Unites </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #box {
+            font-size: 20px;
+        }
+
+        #box h3 {
+            font-size: 1em;
+            padding: 1em;
+        }
+
+        .em {
+            font-size: 1.5em;
+        }
+
+        .rem {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1em = parent font-size</li>
+    <li>if parent font-size:20px</li>
+    <li>1em = 20px</li>
+    <li>2em = 40px</li>
+    <li>and ...</li>
+    <hr>
+    <li>1rem = root font-size (font-size of HTML tag)</li>
+</ul>
+<div id="box">
+    <h3>Box</h3>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae eaque facere itaque possimus, unde
+        velit vitae? Nesciunt quasi, temporibus. Deleniti nobis odio officia reprehenderit sint voluptas. Assumenda,
+        minus vero.
+    </p>
+    <hr>
+    <p>em:</p>
+    <ul class="em">
+        <li>1</li>
+        <li>2</li>
+        <li>3
+            <ul class="em">
+                <li>1</li>
+                <li>2</li>
+                <li>3
+                    <ul class="em">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </li>
+                <li>4</li>
+            </ul>
+        </li>
+        <li>4</li>
+    </ul>
+    <hr>
+    <p>rem:</p>
+    <ul class="rem">
+        <li>1</li>
+        <li>2</li>
+        <li>3
+            <ul class="rem">
+                <li>1</li>
+                <li>2</li>
+                <li>3
+                    <ul class="rem">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </li>
+                <li>4</li>
+            </ul>
+        </li>
+        <li>4</li>
+    </ul>
+</div>
+</body>
+</html>
